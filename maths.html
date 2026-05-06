@@ -6,15 +6,17 @@
     <title>Maths</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.0.0/math.js"></script>
 </head>
     <body class="bg-linear-to-r from-black to-gray-600">
         <div class="flex flex-col items-center justify-around h-screen" id="box">
-            <div class="text-white">\(a \ne b\)</div>
+            <div class="text-white text-6xl font-bold" id="score">Score: 0</div>
+            <div class="text-white text-3xl bg-linear-to-r from-gray-600 to-gray-800 rounded-md px-5 py-3">\(23 + 42 \cdot 5 = ?\)</div>
             <form id="answer" class="flex flex-col items-center">
                 <input type="number" id="input" class="bg-gray-800 text-white text-4xl w-80 font-bold rounded-md px-5 py-3 border-0 focus:ring-2 focus:ring-white focus:outline-none" autocomplete="off" autofocus placeholder="Enter answer">
                 <button type="submit" display="none"></button>
             </form>
-            <div class="text-white" id="time"></div>
+            <div class="text-white text-7xl font-bold" id="time"></div>
         </div>
     </body>
     <script type="module" src="main.js"></script>
