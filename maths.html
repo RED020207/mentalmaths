@@ -8,12 +8,12 @@
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.0.0/math.js"></script>
 </head>
-    <body class="bg-linear-to-r from-black to-gray-600">
+    <body class="bg-[url('https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZzBwNjJvN3VlOXJhZ3Blejhtc3hsano1Nm0xbTR6dmZ4Ym9qd3p3MCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7TKpe3yf9nCnmD0A/giphy.gif')] bg-size-[100px_auto] bg-black/53 bg-blend-overlay">
         <div class="flex flex-col items-center justify-around h-screen" id="box">
-            <div class="text-white text-6xl font-bold" id="score">Score: 0</div>
-            <div class="text-white text-3xl bg-linear-to-r from-gray-600 to-gray-800 rounded-md px-5 py-3">\(23 + 42 \cdot 5 = ?\)</div>
+            <div class="text-white text-6xl font-bold" id="score"></div>
+            <div class="text-white text-3xl bg-black/50 rounded-md px-5 py-1" id="math"></div>
             <form id="answer" class="flex flex-col items-center">
-                <input type="number" id="input" class="bg-gray-800 text-white text-4xl w-80 font-bold rounded-md px-5 py-3 border-0 focus:ring-2 focus:ring-white focus:outline-none" autocomplete="off" autofocus placeholder="Enter answer">
+                <input type="number" id="input" class="bg-black/50 text-white text-4xl w-80 font-bold rounded-md px-5 py-3 border-0 focus:ring-2 focus:ring-white focus:outline-none" autocomplete="off" autofocus placeholder="Enter answer">
                 <button type="submit" display="none"></button>
             </form>
             <div class="text-white text-7xl font-bold" id="time"></div>

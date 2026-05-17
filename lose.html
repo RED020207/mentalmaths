@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lost</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="flex flex-col justify-center items-center h-screen bg-black/68 bg-[url('https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OGpsM2JlODc0d2t3bWRyZ281NnFkZzI1cWh1M3lsdHJscXR5N3BnaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l3vR99Uf45qIykQ4U/giphy.gif')] bg-size-[100px_auto] bg-repeat-round bg-blend-overlay">
+            <div class="text-white flex flex-col justify-center items-center h-screen gap-12">
+                <div class="text-6xl font-mono font-bold text-shadow-[0_0_10px_rgba(255,255,255,0.7)]">You Lost!</div>
+                <div id="losescore" class="text-2xl font-mono font-extrabold"></div>
+                <div class="text-xl font-mono italic">Better luck next time!</div>
+                <button id="back" class="bg-white text-black hover:bg-black hover:text-white active:bg-black active:text-white active:shadow-[0_0_20px_rgba(255,255,255,0.5)] font-bold py-2 px-4 rounded-md transition-all duration-300 ease-in-out">
+                    Back to Home
+                </button>
+            </div>
+        </div>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
